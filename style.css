@@ -1,0 +1,218 @@
+/* css for body*/
+
+body {
+    background-color: whitesmoke;
+    overflow-x: hidden;
+}
+
+
+/* css for menu*/
+
+.navigate {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: whitesmoke;
+    opacity: .9;
+    overflow-x: auto;
+    padding-top: 120px;
+    transition: 0.7s;
+}
+
+.navigate a {
+    display: flex;
+    padding: 20px 30px;
+    font-size: 25px;
+    text-decoration: brown;
+    color: indianred;
+}
+
+.navigate a:hover {
+    color: black;
+    transition: 0.4s;
+}
+
+.navigate .close {
+    position: absolute;
+    top: 0;
+    right: 22px;
+    margin-left: 50px;
+    font-size: 30px
+}
+
+.slide a {
+    color: indianred;
+    font-size: 36px;
+}
+
+#content {
+    padding: 20px;
+    transition: margin-left 0.7s;
+    overflow: hidden;
+    width: 100%;
+}
+
+
+/* css for float*/
+
+.floatt {
+    width: 100%;
+    height: 80 px;
+    background-color: indianred;
+    color: white;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.left {
+    width: 30%;
+    line-height: 0px;
+    background-color: burlywood;
+    text-align: left;
+    float: left;
+}
+
+.right {
+    width: 70%;
+    line-height: 76px;
+    background-color: mediumseagreen;
+    text-align: center;
+    float: left;
+}
+
+.left1 {
+    width: 70%;
+    line-height: 80px;
+    text-align: center;
+    float: left;
+}
+
+.right1 {
+    width: 30%;
+    line-height: 80px;
+    text-align: center;
+    float: left;
+}
+
+#links {
+    float: left;
+    width: 22.5%;
+    margin: 0 0 0 2.5%;
+}
+
+main {
+    float: left;
+    width: 25%;
+    margin: 20px;
+    line-height: 80px;
+    background-color: gray;
+}
+
+#lab1 {
+    float: left;
+    width: 22.5%;
+    margin: 0 2% 0 1.010%;
+    line-height: 80px;
+    background-color: cadetblue;
+    text-align: center;
+}
+
+#lab2 {
+    float: left;
+    width: 22.5%;
+    margin: 0 1% 0 0;
+    line-height: 80px;
+    background-color: cadetblue;
+    text-align: center;
+}
+
+#lab3 {
+    float: left;
+    width: 22.5%;
+    margin: 0 1% 0 0%;
+    line-height: 80px;
+    background-color: cadetblue;
+    text-align: center;
+}
+
+#lab4 {
+    float: left;
+    width: 22.5%;
+    margin: 0 2% 0 1%;
+    line-height: 80px;
+    background-color: cadetblue;
+    text-align: center;
+}
+
+footer {
+    clear: left;
+}
+
+.expand {
+    background-color: peru;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+.fakeimg {
+    background-color: #aaa;
+    width: 85%;
+    padding: 0px;
+}
+
+.github {
+    background-color: cadetblue;
+    font-size: large;
+    font-style: unset;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.blink {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% {
+        color: black;
+    }
+}
+
+.newimage {
+    width: 100%;
+    padding: 0px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 0px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
