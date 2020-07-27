@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+    <div class="floatt">
+        <!--float region starts-->
+        <centre>
+            <h1>Menu</h1>
+        </centre>
+        <div class="left">
+            <div id="content">
+
+                <span class="slide"> <!--Menu-->
+              <a href="#" onclick="Menu()">
+                <i class="fas fa-bars"></i>
+              </a>
+            </span>
+
+                <div id="menu" class="navigate">
+                    <a href="#" class="close" onclick="closemenu()">
+                        <i class="fas fa-times"></i>
+                    </a>
+                    <a href="test.html">Home</a>
+                    <!--inner links-->
+                    <a href="test.html#target">Lab 1</a>
+                    <a href="test.html#target1">Lab 2</a>
+                    <a href="test.html#target2">Lab 3</a>
+                    <a href="test.html#target3">Lab 4</a>
+                    <a href="test.html#target4">GitHub Profiles</a>
+
+
+                </div><br>
+
+            </div>
+
+        </div>
+        <div class="right">
+            <h2>This pages was built using Float Layout and Positioning</h2>
+            <!--heading-->
+        </div>
+
+        <p></p>
+
+    </div>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <!--Css reference-->
+    <!--javascript for menu-->
+    <script>
+        function Menu() {
+            document.getElementById('menu').style.width = '300px';
+            document.getElementById('content').style.marginLeft = '300px';
+        }
+
+        function closemenu() {
+            document.getElementById('menu').style.width = '0';
+            document.getElementById('content').style.marginLeft = '0';
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <div id="content">
+
+
+
+    </div>
+
+    </div>
+
+    <!--float region 2 for labs-->
+
+    <div id="lab1">
+        <h2>Lab 1</h2>
+        <button type="button" class="expand">Click Me</button>
+        <div class="content">
+            <p>In Lab 1 we got to know about github and its usage.</p>
+
+        </div>
+    </div>
+
+
+    <div id="lab2">
+        <h2>Lab 2</h2>
+        <button type="button" class="expand">Click Me</button>
+        <div class="content">
+            <p>In Lab 2 , we have used basic html tags and css</p>
+
+        </div>
+    </div>
+
+
+    <div id="lab3">
+        <h2>Lab 3</h2>
+        <button type="button" class="expand">Click Me</button>
+        <div class="content">
+            <p>In lab 3, we have written some basic javascript codes</p>
+
+        </div>
+    </div>
+
+    <div id="lab4">
+        <h2>Lab 4</h2>
+        <button type="button" class="expand">Click Me</button>
+        <div class="content">
+            <p>In lab 4, we have created a table using css and javascript functions</p>
+
+        </div>
+    </div>
+
+    <!--javascript for collapse-->
+    <script>
+        let coll = document.getElementsByClassName("expand");
+        let i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                let content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
+    <!--float region for embedded youtube videos-->
+    <div class="row">
+        <div class="left1">
+            <div class="card">
+                <a id=target>
+                    <h2>Github Tutorial</h2>
+                </a>
+
+                <div class="fakeimg" style="height:400px;">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/0fKg7e37bQE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+            </div>
+            <div class="card">
+                <a id=target1>
+                    <h2>Lab 2 Tutorial Video</h2>
+                </a>
+
+
+                <div class="fakeimg" style="height:400px;">
+                    <iframe width="100%" height="400px" src="https://www.youtube.com/embed/SwgYlhXSXLE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+            </div>
+
+            <div class="card">
+                <a id=target2>
+                    <h2>Lab 3 Tutorial Video</h2>
+                </a>
+
+                <div class="fakeimg" style="height:400px;">
+                    <iframe width="100%" height="400px" src="https://www.youtube.com/embed/UlRqTrbwXuA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            </div>
+            <div class="card">
+                <a id=target3>
+                    <h2>Lab 4 Tutorial Video</h2>
+                </a>
+
+                <div class="fakeimg" style="height:400px;">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/vch4qJJ58q4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            </div>
+
+
+            <!--Content tab float right-->
+        </div>
+        <div class="right1">
+            <div class="card">
+                <h2>Lab 5 Team Members</h2>
+                <div class="fakeimg" style="height:75px;">
+                    <Image class="newimage" src="1.jpeg" , alt="Teammates" ,height=60px, width=100%></Image>
+                </div>
+
+            </div>
+            <div class="card">
+
+
+            </div>
+            <!--Links section-->
+            <div class="card">
+
+                <br>
+                <br>
+                <h2>GitHub Links</h2>
+            </div>
+            <div class="fakeimg">
+                <div class="github">
+
+                    <a class="blink" href="https://github.com/mariasharmagbay/IM115Group1Lab1">
+                        <h2>Lab 1</h2>
+                    </a><br>
+                    <a class="blink" href="https://github.com/vinayreddie/Group-9-Lab-2">
+                        <h2>Lab 2</h2>
+                    </a><br>
+                    <a class="blink" href="https://github.com/vaidehidarji1224/Group2Lab3">
+                        <h2>Lab 3</h2>
+                    </a><br>
+                    <a class="blink" href="https://github.com/vinayreddie/Lab-4-Group-9">
+                        <h2>Lab 4</h2>
+                    </a><br>
+                    <a class="blink" href="https://github.com/vinayreddie/Group-9-Lab-2">
+                        <h2>Lab 5</h2>
+                    </a><br></div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <div class="footer">
+        <a id=target4>
+            <h2>Our Profiles</h2><br></a>
+        <a href="https://github.com/vinayreddie">
+            <h5>Vinay Reddy</h5>
+        </a>
+        <a href="https://github.com/prashanthyaddanapudi">
+            <h5>Prashanth Yaddanapudi</h5>
+        </a>
+        <a href="https://github.com/anishahiwale">
+            <h5>Anisha Hiwale</h5>
+        </a>
+
+    </div>
+
+</body>
+
+</html>
